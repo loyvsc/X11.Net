@@ -37,6 +37,6 @@ namespace X11
         /// <param name="delay">delay in milliseconds before performing the action</param>
         /// <returns></returns>
         [DllImport("libXtst.so")]
-        public static extern int XTestFakeKeyEvent(IntPtr display, X11.KeyCode code, bool is_press, ulong delay);
+        public static extern int XTestFakeKeyEvent(IntPtr display, X11.KeyCode code, bool is_press, uint delay);
     }
 }
