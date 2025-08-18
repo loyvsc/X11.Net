@@ -21,23 +21,23 @@ namespace X11
     [StructLayout(LayoutKind.Sequential)]
     public struct Screen
     {
-        IntPtr ext_data;     /* hook for extension to hang data */
-        IntPtr display;/* back pointer to display structure */
-        Window root;            /* Root window id. */
-        int width, height;      /* width and height of screen */
-        int mwidth, mheight;    /* width and height of  in millimeters */
-        int ndepths;            /* number of depths possible */
-        IntPtr depths;          /* list of allowable depths on the screen */
-        int root_depth;         /* bits per pixel */
-        IntPtr root_visual;    /* root visual */
-        IntPtr default_gc;          /* GC for the root root visual */
-        Colormap cmap;          /* default color map */
-        ulong white_pixel;
-        ulong black_pixel;      /* White and Black pixel values */
-        int max_maps, min_maps; /* max and min color maps */
-        int backing_store;      /* Never, WhenMapped, Always */
-        bool save_unders;
-        long root_input_mask;
+        public IntPtr ext_data;     /* hook for extension to hang data */
+        public IntPtr display;/* back pointer to display structure */
+        public Window root;            /* Root window id. */
+        public int width, height;      /* width and height of screen */
+        public int mwidth, mheight;    /* width and height of  in millimeters */
+        public int ndepths;            /* number of depths possible */
+        public IntPtr depths;          /* list of allowable depths on the screen */
+        public int root_depth;         /* bits per pixel */
+        public IntPtr root_visual;    /* root visual */
+        public IntPtr default_gc;          /* GC for the root root visual */
+        public Colormap cmap;          /* default color map */
+        public ulong white_pixel;
+        public ulong black_pixel;      /* White and Black pixel values */
+        public int max_maps, min_maps; /* max and min color maps */
+        public int backing_store;      /* Never, WhenMapped, Always */
+        public bool save_unders;
+        public long root_input_mask;
     }
 
     public partial class Xlib
