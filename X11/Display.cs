@@ -21,23 +21,97 @@ namespace X11
     [StructLayout(LayoutKind.Sequential)]
     public struct Screen
     {
-        public IntPtr ext_data;     /* hook for extension to hang data */
-        public IntPtr display;/* back pointer to display structure */
-        public Window root;            /* Root window id. */
-        public int width, height;      /* width and height of screen */
-        public int mwidth, mheight;    /* width and height of  in millimeters */
-        public int ndepths;            /* number of depths possible */
-        public IntPtr depths;          /* list of allowable depths on the screen */
-        public int root_depth;         /* bits per pixel */
-        public IntPtr root_visual;    /* root visual */
-        public IntPtr default_gc;          /* GC for the root root visual */
-        public Colormap cmap;          /* default color map */
-        public ulong white_pixel;
-        public ulong black_pixel;      /* White and Black pixel values */
-        public int max_maps, min_maps; /* max and min color maps */
-        public int backing_store;      /* Never, WhenMapped, Always */
-        public bool save_unders;
-        public long root_input_mask;
+        /// <summary>
+        /// Hook for extension to hang data
+        /// </summary>
+        public IntPtr ext_data { get; private set; }
+        
+        /// <summary>
+        /// Back pointer to display structure
+        /// </summary>
+        public IntPtr display { get; private set; }
+        
+        /// <summary>
+        /// Root window id
+        /// </summary>
+        public Window root { get; private set; }
+        
+        /// <summary>
+        /// Width of screen
+        /// </summary>
+        public int width { get; private set; }
+        
+        /// <summary>
+        /// Height of screen
+        /// </summary>
+        public int height { get; private set; }
+        
+        /// <summary>
+        /// Width of in millimeters
+        /// </summary>
+        public int mwidth { get; private set; }
+        
+        /// <summary>
+        /// Height of in millimeters
+        /// </summary>
+        public int mheight { get; private set; }
+        
+        /// <summary>
+        /// Number of depths possible
+        /// </summary>
+        public int ndepths { get; private set; }
+        
+        /// <summary>
+        /// List of allowable depths on the screen
+        /// </summary>
+        public IntPtr depths { get; private set; }
+        
+        /// <summary>
+        /// Bits per pixel
+        /// </summary>
+        public int root_depth { get; private set; }
+        
+        /// <summary>
+        /// Root visual
+        /// </summary>
+        public IntPtr root_visual { get; private set; }
+        
+        /// <summary>
+        /// GC for the root root visual
+        /// </summary>
+        public IntPtr default_gc { get; private set; }
+        
+        /// <summary>
+        /// Default color map
+        /// </summary>
+        public Colormap cmap { get; private set; }
+        
+        /// <summary>
+        /// White pixel values
+        /// </summary>
+        public ulong white_pixel { get; private set; }
+        
+        /// <summary>
+        /// Black pixel values
+        /// </summary>
+        public ulong black_pixel { get; private set; }
+        
+        /// <summary>
+        /// Max and min color maps
+        /// </summary>
+        public int max_maps { get; private set; }
+        
+        /// <summary>
+        /// Min color maps
+        /// </summary>
+        public int min_maps { get; private set; }
+        
+        /// <summary>
+        /// Never, WhenMapped, Always
+        /// </summary>
+        public int backing_store { get; private set; }
+        public bool save_unders { get; private set; }
+        public long root_input_mask { get; private set; }
     }
 
     public partial class Xlib
