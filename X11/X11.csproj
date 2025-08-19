@@ -14,8 +14,8 @@
         <RepositoryUrl>https://github.com/loyvsc/X11.Net</RepositoryUrl>
         <PackageTags>X11 Xlib "X Windows"</PackageTags>
         <PackageLicenseUrl>https://github.com/loyvsc/X11.Net/blob/master/X11/License.txt</PackageLicenseUrl>
-        <Version>1.0.7</Version>
-        <AssemblyVersion>1.0.7.0</AssemblyVersion>
+        <Version>1.0.8</Version>
+        <AssemblyVersion>1.0.8</AssemblyVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
     
