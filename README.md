@@ -3,14 +3,26 @@ The project implements an interface to the Xlib / X11 / X windowing system libra
 
 It covers most of the core Xlib as well as some elements of Xmu and Xcb.
 
+## Installation
+
+[Download from NuGet](https://www.nuget.org/packages/X11.Net/)
+
+##### Package Manager
+
+```powershell
+NuGet\Install-Package X11.Net -Version *version_number*
+```
+
+##### .NET CLI
+
+```cmd
+dotnet add package X11.Net --version *version_number*
+```
+
 It deliberately cleaves close to the C API rather than trying to cater to more modern approaches (with the exception of some niceties, such as C# enum's to aid intellisense in suggesting sensible values for the assorted 'long' fields in the C API).
 
 This is because Xlib is by now some 30 years old and there is a large body of documentation describing this interface; not only the man pages by also the Xlib programming manual by Christophe Tronche (ref https://tronche.com/gui/x/xlib/) and, of course, the very large amount of source code for various X applications on the web.
 
 A relatively straightforward usage example is available from https://github.com/ajnewlands/cswm.
 
-
-
 Lastly, I would like to acknowledge those who have contributed to this library, namely Rodney Morris and Marcus Wichelmann.
-
-
