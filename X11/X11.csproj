@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+    <PackageId>X11.Net</PackageId>
   </PropertyGroup>
   
   <PropertyGroup>
